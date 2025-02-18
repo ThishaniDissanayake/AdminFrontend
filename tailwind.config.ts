@@ -1,3 +1,4 @@
+import { Sidebar } from "lucide-react";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,8 +10,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        Sidebar: {
+          active: "#6b32ec",
+          background: "#f5f5f5",
+          foreground: "#636c80",
+        },
       },
     },
   },

@@ -1,11 +1,11 @@
 import React from 'react'
 
-function page() {
+function clients() {
   return (
     <div>
-      
+      Clients
     </div>
   )
 }
 
-export default page
+export default clients

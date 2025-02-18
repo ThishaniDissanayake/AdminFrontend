@@ -1,11 +1,11 @@
 import React from 'react'
 
-function page() {
+function vehicles() {
   return (
     <div>
-      
+      Vehicles
     </div>
   )
 }
 
-export default page
+export default vehicles
