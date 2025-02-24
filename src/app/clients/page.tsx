@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "@/components/ui/button";
-import Input from "@/components/ui/input";
-import { Table, TableHead, TableRow, TableCell, TableBody } from "@/components/ui/table";
-import Filter from "@/components/ui/filter";
-import DropdownMenu from "@/components/ui/dropdown"; 
+import Button from "@/components/ui/clients/button";
+import Input from "@/components/ui/clients/input";
+import { Table, TableHead, TableRow, TableCell, TableBody } from "@/components/ui/clients/table";
+import Filter from "@/components/ui/clients/filter";
+import DropdownMenu from "@/components/ui/clients/dropdown"; 
 
 const clients = [
   { id: "#CLI-0001", name: "Devon Lane", email: "mariarodriguez@gmail.com", phone: "+1 (861) 623-4643", address: "456 Ocean Avenue, Miami, FL 12345" },
