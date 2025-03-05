@@ -1,9 +1,9 @@
 import React from "react";
-import Input from "@/components/ui/vehicles/input";
-import Filter from "@/components/ui/vehicles/filter";
-import { Table, TableHead, TableRow, TableCell, TableBody } from "@/components/ui/vehicles/table";
-import DropdownMenu from "@/components/ui/vehicles/dropdown";
-import Pagination from "@/components/ui/vehicles/pagination";
+import Input from "../../components/ui/vehicles/input";
+import Filter from "../../components/ui/vehicles/filter";
+import { Table, TableHead, TableRow, TableCell, TableBody } from "../../components/ui/vehicles/table";
+import DropdownMenu from "../../components/ui/vehicles/dropdown";
+import Pagination from "../../components/ui/vehicles/pagination";
 
 const vehicles = [
   { id: "#VHC-0001", client: "Devon Lane", type: "Coupe", brand: "Volvo", model: "Toyota Camry", plate: "ABC-4564" },

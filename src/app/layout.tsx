@@ -12,15 +12,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
-    setShowSidebar(pathname !== "/"); 
+    // Hide sidebar on login page, Admin Dashboard, and Super Admin Dashboard
+    setShowSidebar(
+      pathname !== "/" && 
+      pathname !== "/admin_dashboard" && 
+      pathname !== "/superadmin_dashboard"
+    );
   }, [pathname]);
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <div className="flex w-full h-screen bg-gray-200">
-          {/* Show sidebar on all pages EXCEPT the login page */}
-          {showSidebar && <Sidebar />}
+          {/* Show sidebar on all pages EXCEPT "/" (login), "/admin_dashboard", and "/superadmin_dashboard" */}
+          {showSidebar && <Sidebar role="serviceCenterAdmin" />}
           <div className={`flex flex-col w-full h-full ${showSidebar ? "ml-64" : ""} p-4`}>
             {children}
           </div>

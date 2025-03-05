@@ -1,7 +1,7 @@
-"use client"; // ✅ Move this to the very top
+"use client"; 
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // ✅ Corrected import for useRouter in App Router
+import { useRouter } from "next/navigation"; 
 
 export default function Home() {
   const router = useRouter();
@@ -14,7 +14,7 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
-  if (!isMounted) return null; // Avoid hydration mismatch
+  if (!isMounted) return null; 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
